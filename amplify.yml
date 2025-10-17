@@ -11,7 +11,7 @@ application:
           # 依存ライブラリのインストール
           - npm ci
           # AWS Amplifyのバックエンドをデプロイ
-          - npx ampx pipeline-deploy -- branch $AWS_BRANCH --app-id $AWS_APP_ID
+          - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
       build:
         commands:
           # 環境変数の設定
